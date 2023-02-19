@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Erice Travel Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .sidebar {
+      background-color: #f2f2f2;
+      width: 100%;
+      max-width: 200px;
+      padding: 10px;
+      box-sizing: border-box;
+      min-height: 100vh;
+    }
+
+    .sidebar h2 {
+      margin: 0 0 10px 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      padding: 5px;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+
+    .sidebar li:hover {
+      background-color: #ddd;
+    }
+
+    .content {
+      flex: 1;
+      padding: 10px;
+    }
+
+    .content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .content p {
+      margin-top: 0;
+      font-size: 1rem;
+    }
+
+    .content img {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2 data-item="welcome">Things to Do in Erice</h2>
+      <ul>
+        <li data-item="castle-of-venus">Visit the Castle of Venus</li>
+        <li data-item="streets-of-erice">Explore the Streets of Erice</li>
+        <li data-item="gardens-of-ba">Wander through the Gardens of Balio</li>
+        <li data-item="cooking-class">Take a Cooking Class</li>
+        <li data-item="erice-winery">Sample Local Wines</li>
+        <li data-item="mother-church">Visit the Mother Church of Erice</li>
+        <li data-item="torretta-pepoli">Enjoy Panoramic Views from the Torretta Pepoli</li>
+        <li data-item="pepoli-museum">Learn about Sicilian Culture at the Pepoli Regional Museum</li>
+        <li data-item="monte-cofano">Take a Hike on Monte Cofano</li>
+      </ul>
+    </div>
+    <div class="content">
+      <div id="welcome">
+        <h2>Welcome to Erice!</h2>
+        <p>Erice is a beautiful medieval town perched on a hilltop overlooking the sea in northwest Sicily. There are
+          plenty of things to see and do here, from exploring the narrow streets to visiting ancient castles and
+          churches.
+          In this guide, we'll give you some ideas for the top things to do in Erice.</p>
+        <p>To get started, click on one of the items in the list on the left to see more information and photos.</p>
+        
+      </div>
+      <div id="castle-of-venus" style="display: none;">
+        <h2>Visit the Castle of Venus</h2>
+        <p>The Castle of Venus is a Norman fortress that was built on the site of a Temple of Venus. It is one of the
+          most iconic landmarks in Erice, and offers stunning views of the surrounding countryside and sea. Inside, you
+          can see the remains of the temple and the castle's medieval architecture.</p>
+        <a href="https://www.google.com/search?q=castle+of+venus+erice&tbm=isch">Visit the Castle of Venus</a>
+      </div>
+      <div id="streets-of-erice" style="display: none;">
+        <h2>Explore the Streets of Erice</h2>
+        <p>The streets of Erice are narrow and winding, lined with old stone houses and small shops selling local
+          products. It's a joy to wander through the town and soak up the atmosphere, stopping for a coffee or gelato
+          along the way.</p>
+        <a href="https://www.google.com/search?q=erice+streets&tbm=isch">Explore the Streets of Erice</a>
+      </div>
+      <div id="gardens-of-ba" style="display: none;">
+        <h2>Wander through the Gardens of Balio</h2>
+        <p>The Gardens of Balio are a beautiful public park in the heart of Erice. They offer a peaceful retreat from
+          the town's hustle and bustle, with a variety of trees, flowers, and fountains. The park also offers great
+          views of the surrounding countryside.</p>
+        <a href="https://www.google.com/search?q=gardens+of+balio+erice&tbm=isch">Wander through the Gardens of Balio</a>
+      </div>
+      <div id="cooking-class" style="display: none;">
+        <h2>Take a Cooking Class</h2>
+        <p>Sicilian cuisine is known for its delicious flavors and fresh ingredients. Why not learn how to make some of
+          the local dishes yourself? There are several cooking schools in Erice that offer classes in traditional
+          Sicilian cooking, including pasta making and pizza baking.</p>
+        <a href="https://www.google.com/search?q=cooking+class+erice&tbm=isch">Take a Cooking Class</a>
+      </div>
+      <div id="erice-winery" style="display: none;">
+        <h2>Sample Local Wines</h2>
+        <p>Erice is surrounded by vineyards that produce some of the best wines in Sicily. Many wineries in the area
+          offer tastings and tours, where you can try a variety of red, white, and dessert wines, and learn about the
+          local winemaking traditions.</p>
+        <a href="https://www.google.com/search?q=erice+winery&tbm=isch">Sample Local Wines</a>
+      </div>
+      <div id="mother-church" style="display: none;">
+        <h2>Visit the Mother Church of Erice</h2>
+        <p>The Mother Church of Erice is a beautiful baroque church that dates back to the 14th century. It is located
+          in the town's main square, and features stunning frescoes and sculptures. The church is also home to a famous
+          statue of the Madonna and Child.</p>
+        <a href="https://www.google.com/search?q=mother+church+erice&tbm=isch">Visit the Mother Church of Erice</a>
+      </div>
+      <div id="torretta-pepoli" style="display: none;">
+        <h2>Climb the Torretta Pepoli</h2>
+        <p>The Torretta Pepoli is a medieval tower that was built by the Normans in the 12th century. It is one of the
+          highest points in Erice, and offers incredible views of the town and the surrounding area. You can climb to
+          the top of the tower for a panoramic view of the landscape.</p>
+        <a href="https://www.google.com/search?q=torretta+pepoli+erice&tbm=isch">Enjoy Panoramic Views from the Torretta Pepoli</a>
+      </div>
+      <div id="pepoli-museum" style="display: none;">
+        <h2>Learn about Sicilian Culture at the Pepoli Regional Museum</h2>
+        <p>The Pepoli Regional Museum is a cultural museum located in the center of Erice. It features exhibits about
+          Sicilian history, art, and culture, including ancient artifacts, paintings, and sculptures. The museum is
+          housed in a former monastery, and its beautiful architecture is a must-see.</p>
+        <a href="https://www.google.com/search?q=pepoli+museum+erice&tbm=isch">Learn about Sicilian Culture at the Pepoli Regional Museum</a>
+      </div>
+      <div id="monte-cofano" style="display: none;">
+        <h2>Take a Hike on Monte Cofano</h2>
+        <p>Monte Cofano is a beautiful nature reserve located near Erice. It features stunning coastal views, rocky
+          cliffs, and diverse flora and fauna. There are several hiking trails in the park, ranging from easy to
+          challenging, so you can choose the one that suits your fitness level.</p>
+        <a href="https://www.google.com/search?q=monte+cofano+hike&tbm=isch">Take a Hike on Monte Cofano</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    const items = document.querySelectorAll('[data-item]');
+    const itemsContent = [...items].map(item => document.getElementById(item.dataset.item))
+
+    items.forEach(item => {
+      item.addEventListener('click', (e) => {
+        const itemId = e.target.dataset.item;
+        const targetContent = document.getElementById(itemId);
+        itemsContent.forEach(item => item.style.display = 'none');
+        targetContent.style.display = 'block';
+      });
+    });
+  </script>
+</body>
+
+</html>
